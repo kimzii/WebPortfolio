@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    font-family: tahoma, verdana;
+}
+
+/*navbar*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-top: 20px;
+    position: fixed ;
+    width: 100%;
+    top: 0;
+}
+
+nav #icon{
+    margin: 30px;
+}
+
+nav button{
+    border: none;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+nav #navigation{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right:20px ;
+}
+
+#contacts-btn{
+    background-color: #d5015b;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+/*home*/
+
+#home{
+    margin-top: 30px;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*content intro*/
+
+#intro{
+    line-height: 1rem;
+
+}
+
+#greet{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#line{
+    width: 30px;
+    background-color: black;
+    height: 1px;
+}
+
+#content #intro #hello{
+    font-size: 20px;
+}
+
+#content #intro .name{
+    font-size: 64px;
+    display: inline;
+}
+
+.name{
+    padding: 2px;
+}
+
+#greet{
+    padding: 2px;
+}
+#hello{
+    padding: 2px;
+}
+
+#proffession{
+    padding: 2px;
+}
+#content #intro #name{
+    color: #d5015b;
+}
+
+#download-cv{
+    background: #d5015b;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* socials*/
+#socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+#socials a{
+    text-decoration: none;
+}
+
+footer{
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+    background-color: #d5015b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*projects*/
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+#projects h2{
+    color: #d5015b;
+    margin: 70px;
+}
+
+
+.project-image{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.visit{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    width: 169px;
+    height: 36px;
+    position: relative;
+}
+
+.details {
+    width: 350px;
+}
+
+/*RockPaperScissor*/
+
+#RockPaperScissor{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#RockPaperScissor .project-image{
+    background-image: url(Resources/projects/RockPaperScissor.svg);
+}
+
+/*Proverbs Web App*/
+
+#ProverbsWebApp .project-image{
+    background-image: url(Resources/projects/Proverbs.svg);
+}
+
+#ProverbsWebApp{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*projects-details div design*/
+
+.project-details .vl .line{
+    width: 2px;
+    height: 300px;
+    background-color: #d5015b;
+}
+
+.project-details .vl{
+    color: #d5015b;
+}
+
+.project-details{
+    display: flex;
+}
+
+.vl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tech used*/
+
+.tech-used span{
+ background-color: #F5F5DC;
+ padding: 5px 20px;
+ border-radius: 10px;
+ margin: 5px;
+}
+
+.tech-used{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*visit repo*/
+.visit-repo{
+    color: white;
+    background-color: #d5015b;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* projects-ctn flex*/
+
+#project-ctn{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+/*about*/
+
+#about{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about h2{
+    color: #d5015b;
+    padding: 70px;
+}
+
+#about-introduction{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#about-introduction div{
+    width: 450px;
+}
+
+#about-introduction img{
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+    border: 15px solid #d5015b;
+}
+
+/* tech ctn*/
+
+#tech-ctn{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
