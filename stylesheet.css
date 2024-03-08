@@ -74,7 +74,7 @@ nav #contacts-btn {
     align-items: center;
 }
 
-#line{
+.line{
     width: 30px;
     background-color: black;
     height: 1px;
@@ -87,11 +87,7 @@ nav #contacts-btn {
 #content #intro .name{
     font-size: 64px;
     display: inline;
-
-}
-
-.name span{
-    color: #d5015b;
+    font-weight: bold;
 }
 
 #greet{

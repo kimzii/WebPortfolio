@@ -12,6 +12,13 @@
 
         /*home*/
 
+        #greet{
+            justify-content: center;
+        }
+        #intro{
+            padding-bottom: 70px;
+            text-align: center;
+        }
 
         #content{
             flex-direction: column-reverse;
@@ -33,6 +40,11 @@
         /*wrap*/
 
         /*home*/
+
+        #content #intro .name{
+            font-size: 42px;
+
+        }
 
         /*about*/
 
