@@ -1,0 +1,83 @@
+    /*tablet*/
+
+    @media (max-width: 780px) {
+
+        #navigation a img{
+            display: inline;
+        }
+
+        #navigation a span{
+            display: none;
+        }
+
+        /*home*/
+
+
+        #content{
+            flex-direction: column-reverse;
+        }
+
+        #content-image img{
+            width: 300px;
+        }
+
+        .name{
+            font-size: 42px;
+        }
+    }
+
+    /*phone*/
+
+    @media (max-width:430px) {
+
+        /*wrap*/
+
+        /*home*/
+
+        /*about*/
+
+        #about-introduction{
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #about-introduction div{
+            width: 320px;
+        }
+
+        #tech-ctn{
+            width: 320px;
+            gap: 30px;
+        }
+
+        /*projects*/
+
+        #RockPaperScissor{
+            flex-direction: column;
+        }
+
+        #ProverbsWebApp{
+            flex-direction: column;
+        }
+
+        .details{
+            width: 260px;
+        }
+
+        .project-details .vl .line{
+            height: 330px;
+        }
+        
+        /*contact*/
+        #contact-me{
+            width: 320px;
+        }
+
+        #email input{
+            width: 260px;
+        }
+
+        #email button{
+            width: 280px ;
+        }
+    }
