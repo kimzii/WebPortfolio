@@ -93,3 +93,9 @@
             width: 280px ;
         }
     }
+
+@media (max-width: 350px) {
+    .name{
+        font-size: 38px;
+    }
+}
