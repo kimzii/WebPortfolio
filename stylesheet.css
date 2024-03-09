@@ -1,6 +1,9 @@
 body{
     margin: 0;
     font-family: tahoma, verdana;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -12,8 +15,9 @@ nav{
     align-items: center;
     position: fixed ;
     top: 0;
-    width: 100%;
     backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 1600px;
 }
 
 nav a{
