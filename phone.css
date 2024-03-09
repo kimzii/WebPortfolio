@@ -95,7 +95,7 @@
     }
 
 @media (max-width: 350px) {
-    .name{
-        font-size: 38px;
+    #content #intro .name{
+        font-size: 36px;
     }
 }
