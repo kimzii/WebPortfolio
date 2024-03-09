@@ -248,11 +248,17 @@ footer{
 .visit-repo{
     color: white;
     background-color: #d5015b;
-    padding: 10px 50px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
 }
+
 
 /* projects-ctn flex*/
 
