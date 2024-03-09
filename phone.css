@@ -64,12 +64,20 @@
 
         /*projects*/
 
-        #RockPaperScissor{
+        #RockPaperScissor, #ProverbsWebApp, #Riffrant{
             flex-direction: column;
         }
 
-        #ProverbsWebApp{
-            flex-direction: column;
+        #RockPaperScissor .project-details .vl .line{
+            height: 380px;
+        }
+        
+        #Riffrant .project-details .vl .line{
+            height: 440px;
+        }
+        
+        #ProverbsWebApp .project-details .vl .line{
+            height: 350px;
         }
 
         .details{

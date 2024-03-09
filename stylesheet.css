@@ -4,6 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5rem;
 }
 
 
@@ -192,15 +193,14 @@ footer{
 
 /*RockPaperScissor*/
 
-#RockPaperScissor{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
 #RockPaperScissor .project-image{
     background-image: url(Resources/projects/RockPaperScissor.svg);
+}
+
+/*Riffrant*/
+
+#Riffrant .project-image{
+    background-image: url(Resources/projects/riffrant.svg);
 }
 
 /*Proverbs Web App*/
@@ -209,7 +209,7 @@ footer{
     background-image: url(Resources/projects/Proverbs.svg);
 }
 
-#ProverbsWebApp{
+#RockPaperScissor ,#ProverbsWebApp, #Riffrant{
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -218,9 +218,20 @@ footer{
 
 /*projects-details div design*/
 
+#RockPaperScissor .project-details .vl .line{
+    height: 330px;
+}
+
+#Riffrant .project-details .vl .line{
+    height: 400px;
+}
+
+#ProverbsWebApp .project-details .vl .line{
+    height: 330px;
+}
+
 .project-details .vl .line{
     width: 2px;
-    height: 300px;
     background-color: #d5015b;
 }
 
@@ -253,7 +264,7 @@ footer{
 }
 
 .tech-used{
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
 }
