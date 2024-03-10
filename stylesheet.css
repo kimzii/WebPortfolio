@@ -372,6 +372,7 @@ footer {
   border: 1px solid #d5015b;
   border-radius: 5px;
   padding: 10px;
+  color: #d5015b;
 }
 
 #email p {
@@ -397,4 +398,9 @@ footer {
   color: #d5015b;
   margin-top: 20px;
   margin-left: 20px;
+}
+
+#email button:hover {
+  border: 2px solid #d5015b;
+  font-weight: bold;
 }
