@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    font-family: tahoma, verdana;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5rem;
+    color: rgb(52, 52, 52);
+    background-color: #f1f1f1;
+}
+/*contact email*/
+
+#contact-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0 50px 0;
+}
+
+#contact-me {
+  width: 400px;
+  height: 400px;
+  background-color: #f5f5dc;
+  border: 1px solid #d5015b;
+  font-size: 14px;
+  color: #d5015b;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+#contact-title {
+  margin: 30px;
+  color: #d5015b;
+}
+
+#email input {
+  width: 340px;
+  margin: 0px 20px;
+  border: 1px solid #d5015b;
+  border-radius: 5px;
+  padding: 10px;
+  color: #d5015b;
+}
+
+#email p {
+  margin: 20px 20px 5px 20px;
+}
+
+#email #message {
+  height: 100px;
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#email button {
+  padding: 10px;
+  width: 360px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #d5015b;
+  color: #d5015b;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#email button:hover {
+  border: 2px solid #d5015b;
+  font-weight: bold;
+}
+
+footer {
+    font-size: 12px;
+    height: 30px;
+    width: 100%;
+    background-color: #d5015b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  

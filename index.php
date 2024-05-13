@@ -13,31 +13,67 @@
   <body>
     <nav>
       <div id="icon">
-        <img src="Resources/icon/KT.svg" alt="icon" width="38px" />
+        <a href="./admin/login.php"><img src="Resources/icon/KT.svg" alt="icon" width="38px" /></a>
       </div>
 
       <div id="navigation">
         <a id="home-btn" href="#home"
-          ><img src="Resources/nav/home.svg" alt="" /><span>HOME</span></a
+          ><img src="Resources/nav/home.svg" alt="" /><span>Home</span></a
         >
 
         <a id="about-btn" href="#about"
-          ><img src="Resources/nav/about.svg" alt="" /><span>ABOUT</span></a
+          ><img src="Resources/nav/about.svg" alt="" /><span>About</span></a
+        >
+
+        <a id="about-btn" href=""
+          ><img src="Resources/nav/about.svg" alt="" /><span>Experience</span></a
         >
 
         <a id="projects-btn" href="#projects"
           ><img src="Resources/nav/project.svg" alt="" /><span
-            >PROJECTS</span
+            >Projects</span
           ></a
         >
 
-        <a id="contacts-btn" href="#contact-ctn"
+        <a id="contacts-btn" href="./Contact/contact.html"
           ><img src="Resources/nav/call.png" alt="" width="24px" /><span
-            >CONTACT</span
+            >Contact</span
           ></a
         >
       </div>
     </nav>
+
+    <!-- php code -->
+    <?php
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+      $dbname = "portfolio";
+
+      $conn = new mysqli($servername, $username, $password, $dbname);
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+      $sql = "SELECT fname, lname FROM home";
+      $result = $conn->query($sql);
+
+      $fname;
+      $lname;
+      
+      if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            $fname = $row['fname'];
+            $lname = $row['lname'];
+        }
+      } else {
+        echo "0 results";
+      }
+
+      // Close connection
+      $conn->close();
+    ?>
+
 
     <div id="home">
       <div id="content">
@@ -49,9 +85,8 @@
           </div>
 
           <div id="name-ctn">
-            <p class="name">I'm</p>
-            <p class="name" id="name">Kimzie</p>
-            <p class="name">Torres</p>
+            <p class="name">I'm </p>
+            <p class="name" id="name"> <?php echo $fname . " " . $lname ?></p>
           </div>
 
           <p id="proffession">A Web Developer, Web Designer, and an Artist</p>
@@ -285,23 +320,6 @@
       <!--end of project-ctn-->
     </div>
     <!--end of projects-->
-
-    <div id="contact-ctn">
-      <h2 id="contact-title">Contact Me!</h2>
-      <div id="contact-me">
-        <div id="email">
-          <p>Full Name</p>
-          <input type="text" />
-          <p>Email</p>
-          <input type="email" />
-          <p>Message</p>
-          <input id="message" type="text" />
-
-          <button>SEND</button>
-        </div>
-      </div>
-    </div>
-    <!--end of contact ctn-->
 
     <footer>
       <p>Copyright @2024 | Designed by Kimzii</p>
