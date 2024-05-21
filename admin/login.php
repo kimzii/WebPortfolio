@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $servername = "localhost";
 $username = "root";
@@ -26,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['pass'] = $row['pass'];
 
         // Redirect to profile
-        header("Location: home-admin.php");
+        header("Location: admin.php");
         exit();
     } else {
         echo "Account does not exist";
